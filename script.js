@@ -19,7 +19,6 @@ const pageContent = {
 ## [Chicago Streets](https://jackjross.com/) (Ongoing)
 Documenting the urban landscape and human stories of Chicago through street photography.
 
-- Black and white urban photography
 - Focus on human moments and architectural interplay
 - Exploring neighborhoods and communities
 
