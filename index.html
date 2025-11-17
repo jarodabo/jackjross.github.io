@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jack ross</title>
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@300;400;600" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="title-block">
+            <h1>jack ross</h1>
+            <p class="commit-info" id="commit-info">loading...</p>
+        </div>
+        <div class="actions">
+            <a href="https://instagram.com/jackjross" target="_blank" class="icon-btn" title="Instagram">
+                <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://jackjross.substack.com" target="_blank" class="icon-btn" title="Substack">
+                <i data-lucide="mail"></i>
+            </a>
+            <a href="https://github.com/jackjross" target="_blank" class="icon-btn" title="GitHub">
+                <i data-lucide="github"></i>
+            </a>
+            <button class="icon-btn" id="theme-toggle" title="Toggle theme">
+                <i data-lucide="sun" id="theme-toggle-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <h5>now:</h5>
+            <ul>
+                <li>documenting <a href="#" data-tab="projects">chicago streets</a></li>
+                <li>preparing for <a href="#" data-tab="projects">vietnam 2025</a></li>
+                <li>writing on <a href="https://jackjross.substack.com" target="_blank">substack</a></li>
+                <li>based in chicago, il</li>
+            </ul>
+
+            <h5>previously:</h5>
+            <ul>
+                <li>documented vietnam from 2018-2023</li>
+                <li><!-- previous experience --></li>
+            </ul>
+        </div>
+
+        <!-- Resizer -->
+        <div class="resizer" id="resizer"></div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-trigger active" data-tab="projects">Projects</button>
+                <button class="tab-trigger" data-tab="tools">Tools</button>
+                <button class="tab-trigger" data-tab="blog">Blog</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content active" id="projects-content">
+                <div class="file-header">
+                    <button class="file-btn">
+                        <i data-lucide="file-text"></i>
+                        <span>projects.md</span>
+                    </button>
+                    <div class="badges">
+                        <span class="badge green" id="additions">+0</span>
+                        <span class="badge red" id="deletions">-0</span>
+                    </div>
+                </div>
+                <div class="diff-block" id="projects-body">
+                    <!-- Content loaded here -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="tools-content">
+                <div class="file-header">
+                    <button class="file-btn">
+                        <i data-lucide="file-text"></i>
+                        <span>tools.md</span>
+                    </button>
+                    <div class="badges">
+                        <span class="badge green">+0</span>
+                        <span class="badge red">-0</span>
+                    </div>
+                </div>
+                <div class="diff-block" id="tools-body">
+                    <!-- Content loaded here -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="blog-content">
+                <div class="file-header">
+                    <button class="file-btn">
+                        <i data-lucide="file-text"></i>
+                        <span>blog.md</span>
+                    </button>
+                    <div class="badges">
+                        <span class="badge green">+0</span>
+                        <span class="badge red">-0</span>
+                    </div>
+                </div>
+                <div class="diff-block" id="blog-body">
+                    <!-- Content loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="command-palette">
+        <div class="command-palette-content">
+            <div class="command-palette-header">
+                <h2>Keyboard Shortcuts</h2>
+                <button class="icon-btn" id="close-palette">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="command-palette-body">
+                <div class="shortcut-group">
+                    <h3>Navigation</h3>
+                    <div class="shortcut-item">
+                        <div class="shortcut-keys">
+                            <kbd>P</kbd>
+                        </div>
+                        <span class="shortcut-description">Go to Projects</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <div class="shortcut-keys">
+                            <kbd>T</kbd>
+                        </div>
+                        <span class="shortcut-description">Go to Tools</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <div class="shortcut-keys">
+                            <kbd>B</kbd>
+                        </div>
+                        <span class="shortcut-description">Go to Blog</span>
+                    </div>
+                </div>
+                <div class="shortcut-group">
+                    <h3>Actions</h3>
+                    <div class="shortcut-item">
+                        <div class="shortcut-keys">
+                            <kbd class="cmd-key">⌘</kbd>
+                            <kbd>K</kbd>
+                        </div>
+                        <span class="shortcut-description">Open command palette</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <div class="shortcut-keys">
+                            <kbd>Esc</kbd>
+                        </div>
+                        <span class="shortcut-description">Close command palette</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
