@@ -401,8 +401,9 @@ body.dark-mode .diff-block {
 }
 
 .diff-block li {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
     padding-left: 0.5rem;
+    line-height: 1.5;
 }
 
 .linkedin-btn {
