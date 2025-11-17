@@ -50,9 +50,9 @@ Five years of documenting Vietnam's streets, people, and culture.
 - Social media management
 
 ## Workflow
-- RAW file management
-- Cloud backup solutions
-- Project organization systems
+- Synology NAS
+- Backblaze
+- Dropbox Business
 `,
     blog: `# Blog
 
