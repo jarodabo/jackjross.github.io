@@ -40,8 +40,8 @@ Five years of documenting Vietnam's streets, people, and culture.
     tools: `# Tools
 
 ## Photography Gear
-- Primary camera body
-- Street photography lenses
+- Fujifilm X-Pro3
+- XF 23mm F2
 - Editing software (Lightroom, Capture One)
 
 ## Digital Tools
