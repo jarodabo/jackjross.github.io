@@ -656,6 +656,7 @@ body.dark-mode .command-palette-content {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .terminal-output {
@@ -699,6 +700,8 @@ body.dark-mode .command-palette-content {
     align-items: center;
     gap: 8px;
     margin-top: 8px;
+    padding: 8px 0;
+    border-top: 1px solid #404040;
 }
 
 .terminal-prompt {
@@ -708,13 +711,17 @@ body.dark-mode .command-palette-content {
 
 .terminal-input {
     flex: 1;
-    background: none;
+    background: transparent;
     border: none;
     color: #d4d4d4;
     font-family: inherit;
     font-size: 14px;
     outline: none;
     caret-color: #569cd6;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
 }
 
 .terminal-input::placeholder {
